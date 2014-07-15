@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- <ActionGroup> <Count>4</Count> <WaitTime>5</WaitTime> <Actions> <Action> 
+	<Operation>屏幕操作，对应枚举Operation.java文件 点击：0，长按：1，拖动：2，输入：3，启动App：4，结束App：5，Shell命令：6，按下：7</Operation> 
+	<ViewId>被点击的ViewID</ViewId> <PointX>被点击点的x坐标</PointX> <PointY>被点击点的y坐标</PointY> 
+	<StartPointX>拖动起始点的x坐标</StartPointX> <StartPointY>拖动起始点的y坐标</StartPointY> 
+	<EndPointX>拖动结束点的x坐标</EndPointX> <EndPointY>拖动结束点的y坐标</EndPointY> <Text>978008980</Text> 
+	<AppPackage>包名称</AppPackage> <MainActivity>主Activity</MainActivity> <WaitTime>等待时间几秒</WaitTime> 
+	<ShellCMDs> <cmd>Shell命令</cmd> <cmd>Shell命令</cmd> </ShellCMDs> <PressKeyCode>物理按键对应PhysicalButton.java 
+	KEYCODE_HOME KEYCODE_SEARCH KEYCODE_MENU KEYCODE_BACK DPAD_UP DPAD_DOWN DPAD_LEFT 
+	DPAD_RIGHT DPAD_CENTER enter</PressKeyCode> <Describtion>动作描述</Describtion> 
+	</Action> </Actions> </ActionGroup> -->
+<ActionGroup>
+	<Count>4</Count>
+	<WaitTime>5</WaitTime>
+	<Actions>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>4</Operation>
+				<AppPackage>com.tencent.mm</AppPackage>
+				<MainActivity>com.tencent.mm.ui.LauncherUI</MainActivity>
+				<WaitTime>10</WaitTime>
+				<Describtion>启动微信...</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>0</Operation>
+				<PointX>596</PointX>
+				<PointY>186</PointY>
+				<WaitTime>2</WaitTime>
+				<Describtion>点击通讯录</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>0</Operation>
+				<PointX>139</PointX>
+				<PointY>648</PointY>
+				<WaitTime>2</WaitTime>
+				<Describtion>点击订阅号</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>0</Operation>
+				<PointX>342</PointX>
+				<PointY>664</PointY>
+				<WaitTime>2</WaitTime>
+				<Describtion>点击插画师</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>0</Operation>
+				<PointX>661</PointX>
+				<PointY>96</PointY>
+				<WaitTime>2</WaitTime>
+				<Describtion>点击详情</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>0</ActionType>
+			<Action>
+				<Operation>0</Operation>
+				<PointX>261</PointX>
+				<PointY>762</PointY>
+				<WaitTime>10</WaitTime>
+				<Describtion>点击历史记录</Describtion>
+			</Action>
+		</ActionWarp>
+		<ActionWarp>
+			<ActionType>1</ActionType>
+			<ActionGroup>
+				<Count>10</Count>
+				<WaitTime>2</WaitTime>
+				<Actions>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>6</Operation>
+							<ShellCMDs>
+								<cmd>sendevent /dev/input/event3 3 57 1099</cmd>
+								<cmd>sendevent /dev/input/event3 3 58 50</cmd>
+								<cmd>sendevent /dev/input/event3 3 52 1</cmd>
+								<cmd>sendevent /dev/input/event3 3 53 379</cmd>
+								<cmd>sendevent /dev/input/event3 3 54 272</cmd>
+								<cmd>sendevent /dev/input/event3 3 57 0</cmd>
+								<cmd>sendevent /dev/input/event3 0 0 0</cmd>
+								<cmd>sendevent /dev/input/event3 3 88 53</cmd>
+								<cmd>sendevent /dev/input/event3 0 0 0</cmd>
+								<cmd>sendevent /dev/input/event3 3 88 54</cmd>
+								<cmd>sendevent /dev/input/event3 0 0 0</cmd>
+								<cmd>sendevent /dev/input/event3 3 88 52</cmd>
+								<cmd>sendevent /dev/input/event3 0 0 0</cmd>
+								<cmd>sendevent /dev/input/event3 3 57 4294967295</cmd>
+								<cmd>sendevent /dev/input/event3 0 0 0</cmd>
+							</ShellCMDs>
+							<WaitTime>8</WaitTime>
+							<Describtion>点击打开文章详情</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>7</Operation>
+							<PressKeyCode>KEYCODE_MENU</PressKeyCode>
+							<WaitTime>3</WaitTime>
+							<Describtion>按下Menu按钮</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>0</Operation>
+							<PointX>461</PointX>
+							<PointY>674</PointY>
+							<WaitTime>2</WaitTime>
+							<Describtion>点击复制链接</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>4</Operation>
+							<AppPackage>com.louding.monkeyrunnerdemo</AppPackage>
+							<MainActivity>com.louding.monkeyrunnerdemo.MainActivity
+							</MainActivity>
+							<WaitTime>5</WaitTime>
+							<Describtion>启动Demo...</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>1</Operation>
+							<PointX>342</PointX>
+							<PointY>458</PointY>
+							<WaitTime>2</WaitTime>
+							<Describtion>长按</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>0</Operation>
+							<PointX>67</PointX>
+							<PointY>285</PointY>
+							<WaitTime>2</WaitTime>
+							<Describtion>点击粘贴</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>0</Operation>
+							<PointX>371</PointX>
+							<PointY>618</PointY>
+							<WaitTime>2</WaitTime>
+							<Describtion>点击下载</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>5</Operation>
+							<AppPackage>com.louding.monkeyrunnerdemo</AppPackage>
+							<WaitTime>3</WaitTime>
+							<Describtion>结束Demo...</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>7</Operation>
+							<PressKeyCode>KEYCODE_BACK</PressKeyCode>
+							<WaitTime>2</WaitTime>
+							<Describtion>点击返回</Describtion>
+						</Action>
+					</ActionWarp>
+					<ActionWarp>
+						<ActionType>0</ActionType>
+						<Action>
+							<Operation>2</Operation>
+							<StartPointX>288</StartPointX>
+							<StartPointY>900</StartPointY>
+							<EndPointX>288</EndPointX>
+							<EndPointY>800</EndPointY>
+							<WaitTime>4</WaitTime>
+							<Describtion>向上拖动</Describtion>
+						</Action>
+					</ActionWarp>
+				</Actions>
+			</ActionGroup>
+		</ActionWarp>
+	</Actions>
+</ActionGroup>
